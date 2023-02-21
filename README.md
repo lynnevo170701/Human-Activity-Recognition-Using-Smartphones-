@@ -39,7 +39,7 @@ Author: Lynne Vo
     set with the average of each variable for each activity and each
     subject.
 
-1.  **Tidy Data Set**: average each variable of each activity of each
+2. **Tidy Data Set**: average each variable of each activity of each
     subject
-2.  **Code Book**: describe data set, any transformations to clean up
+3. **Code Book**: describe data set, any transformations to clean up
     the data
