@@ -20,7 +20,7 @@ Author: Lynne Vo
 | Description       | File           | Link                                                                                                                                                                         |
 |--------|-------|----------------------------------------------------------|
 | R analysis script | run_analysis.R | [R analysis script](https://github.com/lynnevo170701/Human-Activity-Recognition-Using-Smartphones-/blob/419b75c02f2ddc43a0c185f4b0b64c0c8dbaec60/R%20scripts/run_analysis.R) |
-| Tidy Data Set     | tidy_data.txt  | [Tidy Data Set](https://github.com/lynnevo170701/Human-Activity-Recognition-Using-Smartphones-/blob/419b75c02f2ddc43a0c185f4b0b64c0c8dbaec60/data/tidy_data.txt)             |
+| Tidy Data Set     | tidy_data.txt  | [Tidy Data Set](https://github.com/lynnevo170701/Human-Activity-Recognition-Using-Smartphones-/blob/cb184e168767d69cbb2257d9502b845f54839a56/data/tidy_data.txt)             |
 | Code Book         | code_book.Rmd  | [Code Book](https://github.com/lynnevo170701/Human-Activity-Recognition-Using-Smartphones-/blob/d4071f794f8fc300bf312f3a734d42004b7ab7a8/R%20scripts/CodeBook.md)          |
 
 1.  **R analysis script**: the main script analysis
