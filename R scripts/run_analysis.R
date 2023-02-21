@@ -46,7 +46,7 @@ test_df <- cbind(test_subject,test_labels, test_df)
 #merge two data sets
 merged_df <- rbind(train_df,test_df)
 
-#changing acitivity labels to corresponding activity names
+#changing activity labels to corresponding activity names
 merged_df$Activity <- sapply(merged_df$Activity, function(x) {activity_labels$ActivityName[x]})
 
 #average of each variable for each activity and each subject
@@ -54,6 +54,7 @@ tidy_data <- merged_df %>%
   group_by(SubjectNumber, Activity) %>% 
   summarise(across(where(is.numeric), mean),
             .groups = "drop")
+colnames(tidy_data) <- gsub("BodyBody", "Body", colnames(tidy_data))
 
 #export merged_df as tidy_data.txt file
-write.table(tidy_data, file = "tidy_data.txt", quote = TRUE)
+write.table(tidy_data, file = "tidy_data.txt", row.names = FALSE, col.names = TRUE)
