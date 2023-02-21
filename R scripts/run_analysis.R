@@ -2,7 +2,7 @@
 file_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(file_url, destfile = "./mydata.zip")
 unzip("./mydata.zip")
-
+library(tidyverse)
 #read activity labels + features
 #using read.delim() to read .txt files
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt"
@@ -49,5 +49,11 @@ merged_df <- rbind(train_df,test_df)
 #changing acitivity labels to corresponding activity names
 merged_df$Activity <- sapply(merged_df$Activity, function(x) {activity_labels$ActivityName[x]})
 
+#average of each variable for each activity and each subject
+tidy_data <- merged_df %>% 
+  group_by(SubjectNumber, Activity) %>% 
+  summarise(across(where(is.numeric), mean),
+            .groups = "drop")
+
 #export merged_df as tidy_data.txt file
-write.table(merged_df, file = "tidy_data.txt", quote = TRUE)
+write.table(tidy_data, file = "tidy_data.txt", quote = TRUE)
