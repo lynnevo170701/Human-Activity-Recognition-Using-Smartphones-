@@ -1,3 +1,11 @@
+---
+title: CodeBook
+author: Lynne Vo
+date: 21-02-2023
+output:
+md_document:
+variant: markdown_github
+---
 # Getting and Cleaning Data Project
 
 Author: Lynne Vo  
