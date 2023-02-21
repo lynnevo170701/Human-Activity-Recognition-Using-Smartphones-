@@ -1,4 +1,4 @@
-# Human Activity Recoignition Using Smartphones
+# Human Activity Recognition Using Smartphones
 
 This is a final project to finish the course “Getting and Cleaning Data”
 on Coursera operated by Johns Hopkins University  
