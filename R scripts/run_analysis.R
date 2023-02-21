@@ -1,5 +1,4 @@
 #download zip files and unzip files
-library(tidyverse)
 file_url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(file_url, destfile = "./mydata.zip")
 unzip("./mydata.zip")
